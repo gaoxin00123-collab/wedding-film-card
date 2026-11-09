@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>几生几世 · 婚礼电影选片卡</title>
+<style>
+:root{color-scheme:light;--ink:#282720;--muted:#625d53;--paper:#f6f3ec;--surface:#fffdf8;--line:#dcd4c5;--accent:#614032;--accent-bg:#f3e9df;--serif:"Songti SC","Noto Serif CJK SC","STSong","SimSun",serif}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--paper);font:15px/1.65 "PingFang SC","Microsoft YaHei",system-ui,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{cursor:default}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}[hidden]{display:none!important}
+.mast{max-width:1120px;margin:auto;padding:32px 28px 22px;display:flex;justify-content:space-between;gap:12px;align-items:center;color:var(--accent)}.mast strong{font-size:13px;letter-spacing:.16em}.mast span{font:italic 17px Georgia,serif}
+.layout{max-width:1120px;margin:auto;padding:0 28px 40px;display:grid;grid-template-columns:304px minmax(0,1fr);gap:20px;align-items:start}.intro{position:relative;overflow:hidden;min-height:420px;background:#3b2b25;color:#fbefe0;padding:37px 31px 44px;border:1px solid #553c30}.intro:after{content:"";position:absolute;width:235px;height:235px;right:-102px;bottom:-111px;border-radius:50%;border:1px solid #b38d6e;box-shadow:0 0 0 17px #3b2b25,0 0 0 18px #805f4e,0 0 0 36px #3b2b25,0 0 0 37px #60483e;pointer-events:none}.eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase}.intro .eyebrow{color:#d6b79a}.intro h1{font-family:var(--serif);font-weight:600;font-size:54px;line-height:1.15;letter-spacing:.045em;margin:34px 0 14px}.intro .subtitle{font:italic 19px Georgia,serif;color:#e7c8ab}.intro p{font-size:14px;color:#ebdbcd;margin:26px 0 0;max-width:225px}.intro .rule{width:40px;border-top:1px solid #b69478;margin-top:32px}
+.card{padding:31px 34px;background:var(--surface);border:1px solid var(--line);min-height:560px}.progress{padding:0;margin:0 0 27px;display:grid;grid-template-columns:repeat(4,1fr);list-style:none;gap:8px}.progress button{width:100%;text-align:left;border:0;border-top:2px solid #e5ded2;background:transparent;padding:8px 2px 0;color:#70685c;font-size:12px}.progress button[aria-current="step"]{border-color:var(--accent);color:var(--accent);font-weight:bold}.progress button.done{border-color:#ad8d76;color:var(--accent)}.progress button:disabled{opacity:.72}
+h2,h3{font-family:var(--serif);line-height:1.3}h2{margin:0 0 9px;font-size:34px;font-weight:600}h3{font-size:21px;margin:0 0 8px}.lead{margin:0 0 23px;color:var(--muted)}fieldset{border:0;margin:0 0 20px;padding:0;min-width:0}legend,.field>span{font-weight:650;margin-bottom:8px;display:block}.field{display:block;margin:0 0 15px}.field input,.field select,.field textarea,textarea#result{width:100%;background:#faf8f2;border:1px solid var(--line);border-radius:5px;padding:9px 11px;color:var(--ink);min-height:43px}.field textarea{resize:vertical}.options{display:flex;flex-wrap:wrap;gap:8px}.option{position:relative;display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:5px;background:#faf8f2;padding:8px 11px;min-height:43px;cursor:pointer}.option:has(input:checked),.life:has(input:checked){border-color:#9c6c53;background:var(--accent-bg);color:#4d2c1d}.option input,.life input{accent-color:var(--accent);margin:0;width:16px;height:16px;flex:none}
+.life-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.life{background:#faf8f2;border:1px solid var(--line);padding:12px 13px;border-radius:5px;min-height:85px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-content:center;cursor:pointer}.life .num{font:26px/1.1 Georgia,var(--serif);letter-spacing:.02em}.life small{grid-column:1/-1;margin-top:5px;color:var(--muted)}.split{display:grid;grid-template-columns:1fr 1fr;gap:10px 13px}.note{font-size:13px;color:var(--muted)}
+.era{border:1px solid var(--line);border-radius:5px;background:#fcfaf5;margin:8px 0}.era summary{padding:10px 12px;cursor:pointer;font-weight:600}.era .era-body{padding:0 12px 1px}.era .era-body .field{margin-bottom:10px}.era small{font-size:12px;font-weight:400;color:var(--muted);margin-left:7px}.buttons{display:flex;justify-content:space-between;gap:9px;margin-top:25px;border-top:1px solid var(--line);padding-top:17px;align-items:center}.btn{border:1px solid var(--accent);background:var(--accent);color:#fffaf1;border-radius:5px;padding:9px 16px;min-height:44px;font-weight:650}.btn.secondary{background:transparent;color:var(--accent);border-color:#bca79a}.button-group{display:flex;gap:8px;flex-wrap:wrap}.status{min-height:1.5em;color:#70412a;font-size:13px;margin:7px 0 0}textarea#result{font-size:13px;resize:vertical;min-height:250px;margin-bottom:12px}
+@media(max-width:760px){.mast{padding:18px 17px 12px}.layout{grid-template-columns:1fr;gap:12px;padding:0 14px 26px}.intro{min-height:0;padding:20px 20px 23px}.intro h1{font-size:41px;margin:11px 0 4px}.intro .subtitle{font-size:16px}.intro p{margin:9px 0 0;max-width:80%}.intro .rule{display:none}.card{padding:19px 17px;min-height:0}.progress{margin-bottom:18px}h2{font-size:29px}.lead{margin-bottom:17px}.life{padding:9px;min-height:72px}.life .num{font-size:21px}.life small{font-size:11px}.split{grid-template-columns:1fr}.era .split{gap:0}}
+@media(max-width:350px){.life-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mast span{display:none}}
+</style>
+</head>
+<body>
+<header class="mast"><strong>婚礼电影 · 客户选片卡</strong><span>A Story Across Lifetimes</span></header>
+<main class="layout">
+  <aside class="intro">
+    <div class="eyebrow">The film brief</div>
+    <h1>几生几世</h1>
+    <div class="subtitle">Across Lifetimes</div>
+    <p>同一对新人，在不同年代留下不同的故事。选出你们想看的画面，剩下的交给制作方一起设计。</p>
+    <div class="rule" aria-hidden="true"></div>
+  </aside>
+  <article class="card">
+    <nav aria-label="问答步骤"><ol class="progress" id="progress">
+      <li><button type="button" data-step="0">01 世数</button></li><li><button type="button" data-step="1">02 方向</button></li>
+      <li><button type="button" data-step="2">03 各世</button></li><li><button type="button" data-step="3">04 收尾</button></li>
+    </ol></nav>
+    <form id="brief">
+      <section data-panel="0" aria-labelledby="heading0">
+        <h2 id="heading0" tabindex="-1">你们想拍几世？</h2>
+        <p class="lead">每一世对应一段不同的时空。先选数量，年代和情节可以稍后再定。</p>
+        <fieldset><legend>想拍的世数 <span class="note">· 必选</span></legend>
+          <div class="life-grid">
+            <label class="life"><span class="num">二生二世</span><input required type="radio" name="count" value="2"><small>两段时空</small></label>
+            <label class="life"><span class="num">三生三世</span><input type="radio" name="count" value="3"><small>三个年代</small></label>
+            <label class="life"><span class="num">四生四世</span><input type="radio" name="count" value="4"><small>四段故事</small></label>
+            <label class="life"><span class="num">五生五世</span><input type="radio" name="count" value="5"><small>五个章节</small></label>
+            <label class="life"><span class="num">六生六世</span><input type="radio" name="count" value="6"><small>六个章节</small></label>
+            <label class="life"><span class="num">其他</span><input type="radio" name="count" value="other"><small>自定或请制作方推荐</small></label>
+          </div>
+        </fieldset>
+        <label class="field" id="customCount" hidden><span>自定世数 <small class="note">（留空表示待推荐）</small></span><input type="number" inputmode="numeric" name="otherCount" min="2" max="12" step="1" placeholder="填写 2–12"></label>
+        <div class="split">
+          <label class="field"><span>两位怎么称呼 <small class="note">选填</small></span><input name="names" maxlength="80" placeholder="例如：阿言 &amp; 小禾"></label>
+          <label class="field"><span>希望的片长</span><select name="duration"><option value="">请制作方建议</option><option>约 60 秒</option><option>约 90 秒</option><option>约 2 分钟</option><option>约 3 分钟</option><option>有固定片长，见备注</option></select></label>
+        </div>
+      </section>
+      <section data-panel="1" aria-labelledby="heading1" hidden>
+        <h2 id="heading1" tabindex="-1">想看什么样的电影？</h2>
+        <p class="lead">喜欢哪种感觉就选哪种。还在考虑的项目可以跳过。</p>
+        <fieldset><legend>故事方式</legend><div class="options">
+          <label class="option"><input type="radio" name="form" value="抒情混剪，重画面和情绪">抒情混剪</label>
+          <label class="option"><input type="radio" name="form" value="剧情短片，重事件和人物关系">剧情短片</label>
+          <label class="option"><input type="radio" name="form" value="剧情与抒情结合">两者结合</label>
+        </div></fieldset>
+        <fieldset><legend>希望的气氛 <small class="note">可多选</small></legend><div class="options">
+          <label class="option"><input type="checkbox" name="mood" value="温柔浪漫">温柔浪漫</label>
+          <label class="option"><input type="checkbox" name="mood" value="明亮轻松">明亮轻松</label>
+          <label class="option"><input type="checkbox" name="mood" value="克制感人">克制感人</label>
+          <label class="option"><input type="checkbox" name="mood" value="幽默俏皮">幽默俏皮</label>
+          <label class="option"><input type="checkbox" name="mood" value="浓烈热烈">浓烈热烈</label>
+          <label class="option"><input type="checkbox" name="mood" value="有冒险感">有冒险感</label>
+        </div></fieldset>
+        <div class="split">
+          <label class="field"><span>画面质感</span><select name="look"><option value="">请制作方建议</option><option>写实电影</option><option>复古胶片</option><option>东方诗意</option><option>时装大片</option><option>风格按各世变化</option><option>其他，见备注</option></select></label>
+          <label class="field"><span>真实经历怎么用？</span><select name="basis"><option value="">请制作方建议</option><option>各世都是虚构故事</option><option>把真实经历改编到不同年代</option><option>真实与虚构结合</option></select></label>
+        </div>
+        <label class="field"><span>你们的真实细节 <small class="note">选填</small></span><textarea name="real" rows="2" maxlength="1200" placeholder="一个地点、一句常说的话、一件小事，都可以。"></textarea></label>
+      </section>
+      <section data-panel="2" aria-labelledby="heading2" hidden>
+        <h2 id="heading2" tabindex="-1">每一世，想看见什么？</h2>
+        <p class="lead" id="eraLead">点开各世选择。只填你们已经想好的部分。</p>
+        <div id="eras"></div>
+        <label class="field" style="margin-top:15px"><span>其他想要的时代或连接方式 <small class="note">选填</small></span><textarea name="connection" rows="2" maxlength="1000" placeholder="例如：至少有一世在民国；用同一个牵手动作串起不同年代。"></textarea></label>
+      </section>
+      <section data-panel="3" aria-labelledby="heading3" hidden>
+        <h2 id="heading3" tabindex="-1">怎么把故事交给现场？</h2>
+        <p class="lead">填完生成需求单，复制文字或保存后发回制作方。</p>
+        <div class="split">
+          <label class="field"><span>主要在哪播放？</span><select name="play"><option value="">还没定</option><option>仪式或宴会前暖场</option><option>新人入场前，接真人入场</option><option>仪式或宴会中播放</option><option>发给亲友或社交平台</option><option>其他，见备注</option></select></label>
+          <label class="field"><span>画幅</span><select name="ratio"><option value="">还没定</option><option>16:9 横屏</option><option>9:16 竖屏</option><option>横竖两版</option><option>其他，见备注</option></select></label>
+          <label class="field"><span>结尾更想看到</span><select name="end"><option value="">请制作方建议</option><option>两人牵手走远</option><option>用一句话接现场入场</option><option>停在两人的一个眼神或拥抱</option><option>切到真实婚礼或生活画面</option><option>其他，见备注</option></select></label>
+          <label class="field"><span>声音偏好</span><select name="sound"><option value="">请制作方建议</option><option>纯配乐为主</option><option>配乐加少量对白</option><option>配乐加旁白</option><option>有指定音乐或台词，见备注</option></select></label>
+        </div>
+        <label class="field"><span>必留内容、禁忌或参考 <small class="note">选填</small></span><textarea name="notes" rows="3" maxlength="1500" placeholder="例如：一定要有狗狗；不拍离别；参考片或音乐链接。"></textarea></label>
+      </section>
+      <section id="exportPanel" aria-labelledby="heading4" hidden>
+        <h2 id="heading4" tabindex="-1">需求单已整理好</h2>
+        <p class="lead">复制整份需求单发回制作方。需要提供照片时，原图通过聊天另发。</p>
+        <label class="field"><span>多世婚礼电影需求单</span><textarea id="result" readonly rows="10"></textarea></label>
+        <div class="button-group"><button class="btn" type="button" id="copy">复制完整需求单</button><button class="btn secondary" type="button" id="download">保存为 TXT</button></div>
+        <p class="status" id="status" role="status"></p>
+      </section>
+      <footer class="buttons"><button class="btn secondary" type="button" id="back" hidden>上一步</button><span class="note" id="tip">约 3–5 分钟 · 可跳过未定项</span><button class="btn" type="submit" id="next">下一步</button></footer>
+    </form>
+  </article>
+</main>
+<script>
+'use strict';
+const form = document.querySelector('#brief');
+const panels = [...form.querySelectorAll('[data-panel]'), document.querySelector('#exportPanel')];
+const progress = [...document.querySelectorAll('[data-step]')];
+const eraList = document.querySelector('#eras');
+const otherCount = form.elements.otherCount;
+const result = document.querySelector('#result');
+const status = document.querySelector('#status');
+const next = document.querySelector('#next');
+const back = document.querySelector('#back');
+const chapters = [];
+let page = 0;
+let reached = 0;
+
+function value(name) { return form.elements[name].value.trim(); }
+function selectedCount() {
+  return value('count') === 'other' ? Number(value('otherCount')) : Number(value('count'));
+}
+function addOptions(select, entries) {
+  for (const [id, label] of entries) select.add(new Option(label, id));
+}
+function makeChapter(index) {
+  const section = document.createElement('details');
+  section.className = 'era';
+  section.innerHTML = `<summary>第 ${index + 1} 世<small>可选填</small></summary>
+    <div class="era-body"><div class="split">
+    <label class="field"><span>年代</span><select data-era></select></label>
+    <label class="field"><span>想看的关系瞬间</span><select data-beat></select></label>
+    </div><label class="field" data-other-wrap hidden><span>自定年代</span><input data-other maxlength="80" placeholder="例如：盛唐、80年代港风"></label>
+    <label class="field"><span>场景或想法 <small class="note">选填</small></span><input data-idea maxlength="250" placeholder="例如：火车窗边的约会、海边重逢"></label></div>`;
+  const era = section.querySelector('[data-era]');
+  addOptions(era, [['','请制作方建议'],['古代（年代可再定）','古代（年代可再定）'],['民国','民国'],['近现代复古','近现代复古'],['当代','当代'],['未来或架空','未来或架空'],['other','其他年代']]);
+  addOptions(section.querySelector('[data-beat]'), [['','请制作方建议'],['初遇','初遇'],['相知或约会','相知或约会'],['并肩经历一件事','并肩经历一件事'],['离别或等待','离别或等待'],['重逢','重逢'],['成婚或承诺','成婚或承诺']]);
+  era.addEventListener('change', () => { section.querySelector('[data-other-wrap]').hidden = era.value !== 'other'; });
+  return section;
+}
+function refreshChapters() {
+  const count = selectedCount();
+  while (chapters.length < count) chapters.push(makeChapter(chapters.length));
+  eraList.replaceChildren(...chapters.slice(0, count));
+  if (count && !eraList.querySelector('[open]')) chapters[0].open = true;
+  document.querySelector('#eraLead').textContent = count
+    ? `已选 ${count} 世。点开各世选择，只填已经想好的部分。`
+    : '世数交给制作方建议。可以先在下面写下想保留的年代和画面。';
+}
+function checkCount() {
+  if (!value('count')) return form.querySelector('input[name="count"]').reportValidity();
+  return value('count') !== 'other' || otherCount.reportValidity();
+}
+function show(step, focus = true) {
+  if (step === 2 || step === 4) refreshChapters();
+  if (step === 4) result.value = summary();
+  status.textContent = '';
+  page = step;
+  reached = Math.max(reached, step);
+  panels.forEach((panel, i) => { panel.hidden = i !== step; });
+  progress.forEach((button, i) => {
+    button.disabled = i > reached;
+    button.classList.toggle('done', i < step);
+    if (i === step) button.setAttribute('aria-current', 'step');
+    else button.removeAttribute('aria-current');
+  });
+  back.hidden = step === 0;
+  next.hidden = step === 4;
+  next.textContent = step === 3 ? '生成需求单' : '下一步';
+  document.querySelector('#tip').textContent = step === 4 ? '关闭页面前，请复制或保存。' : '约 3–5 分钟 · 可跳过未定项';
+  if (focus) panels[step].querySelector('h2').focus();
+}
+function summary() {
+  const count = selectedCount();
+  const moods = [...form.querySelectorAll('[name="mood"]:checked')].map(input => input.value).join('、');
+  const read = (key, fallback = '待定') => value(key) || fallback;
+  const lines = ['【多世婚礼电影需求单】', `称呼：${read('names', '未填写')}`,
+    `世数：${count ? count + ' 世' : '请制作方建议'}`, `片长：${read('duration', '请制作方建议')}`,
+    `故事方式：${read('form')}`, `氛围：${moods || '待定'}`, `画面质感：${read('look')}`, `真实与虚构：${read('basis')}`];
+  if (value('real')) lines.push(`真实细节：${value('real')}`);
+  if (count) lines.push('', '【各世偏好】');
+  for (let i = 0; i < count; i++) {
+    const chapter = chapters[i];
+    const get = key => chapter.querySelector(`[data-${key}]`).value.trim();
+    const era = get('era') === 'other' ? get('other') || '其他年代，待补充' : get('era') || '年代待建议';
+    const beat = get('beat') || '情节待建议';
+    lines.push(`第 ${i + 1} 世：${[era, beat, get('idea')].filter(Boolean).join('｜')}`);
+  }
+  if (value('connection')) lines.push(`年代与衔接备注：${value('connection')}`);
+  lines.push('', '【播放与收尾】', `播放：${read('play')}`, `画幅：${read('ratio')}`, `结尾：${read('end')}`, `声音：${read('sound')}`);
+  if (value('notes')) lines.push(`必留、禁忌与参考：${value('notes')}`);
+  return lines.join('\n');
+}
+
+form.addEventListener('change', event => {
+  if (event.target.name === 'count') {
+    const custom = value('count') === 'other';
+    otherCount.disabled = !custom;
+    document.querySelector('#customCount').hidden = !custom;
+  }
+});
+form.addEventListener('submit', event => {
+  event.preventDefault();
+  if (page === 0 && !checkCount()) return;
+  if (page < 4) show(page + 1);
+});
+back.addEventListener('click', () => show(page - 1));
+progress.forEach((button, i) => button.addEventListener('click', () => {
+  if (page === 0 && i > 0 && !checkCount()) return;
+  show(i);
+}));
+document.querySelector('#copy').addEventListener('click', async () => {
+  try {
+    await navigator.clipboard.writeText(result.value);
+    status.textContent = '已复制，粘贴发回制作方即可。';
+  } catch {
+    result.focus();
+    result.select();
+    let copied = false;
+    try { copied = document.execCommand('copy'); } catch { /* Manual selection remains available. */ }
+    status.textContent = copied ? '已复制，粘贴发回制作方即可。' : '已选中全文，可以长按或按 Ctrl+C 复制。';
+  }
+});
+document.querySelector('#download').addEventListener('click', () => {
+  const url = URL.createObjectURL(new Blob(['\uFEFF', result.value], { type: 'text/plain;charset=utf-8' }));
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = '多世婚礼电影需求单.txt';
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 30000);
+  status.textContent = '已开始保存需求单。';
+});
+otherCount.disabled = true;
+show(0, false);
+</script>
+</body>
+</html>
