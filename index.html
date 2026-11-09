@@ -12,7 +12,7 @@
 .card{padding:31px 34px;background:var(--surface);border:1px solid var(--line);min-height:560px}.progress{padding:0;margin:0 0 27px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));list-style:none;gap:8px}.progress button{width:100%;text-align:left;border:0;border-top:2px solid #e5ded2;background:transparent;padding:8px 2px 0;color:#70685c;font-size:12px}.progress button[aria-current="step"]{border-color:var(--accent);color:var(--accent);font-weight:bold}.progress button.done{border-color:#ad8d76;color:var(--accent)}.progress button:disabled{opacity:.72}
 h2,h3{font-family:var(--serif);line-height:1.3}h2{margin:0 0 9px;font-size:34px;font-weight:600}h3{font-size:21px;margin:0 0 8px}.lead{margin:0 0 23px;color:var(--muted)}fieldset{border:0;margin:0 0 20px;padding:0;min-width:0}legend,.field>span{font-weight:650;margin-bottom:8px;display:block}.field{display:block;margin:0 0 15px}.field input,.field select,.field textarea,textarea#result{width:100%;background:#faf8f2;border:1px solid var(--line);border-radius:5px;padding:9px 11px;color:var(--ink);min-height:43px}.field textarea{resize:vertical}.options{display:flex;flex-wrap:wrap;gap:8px}.option{position:relative;display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:5px;background:#faf8f2;padding:8px 11px;min-height:43px;cursor:pointer}.option:has(input:checked),.life:has(input:checked){border-color:#9c6c53;background:var(--accent-bg);color:#4d2c1d}.option input,.life input{accent-color:var(--accent);margin:0;width:16px;height:16px;flex:none}
 .life-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.life{background:#faf8f2;border:1px solid var(--line);padding:12px 13px;border-radius:5px;min-height:85px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-content:center;cursor:pointer}.life .num{font:26px/1.1 Georgia,var(--serif);letter-spacing:.02em}.life small{grid-column:1/-1;margin-top:5px;color:var(--muted)}.split{display:grid;grid-template-columns:1fr 1fr;gap:10px 13px}.note{font-size:13px;color:var(--muted)}
-.era{border:1px solid var(--line);border-radius:5px;background:#fcfaf5;margin:8px 0}.era summary{padding:10px 12px;min-height:44px;cursor:pointer;font-weight:600}.era .era-body{padding:0 12px 1px}.era .era-body .field{margin-bottom:10px}.options~.field{margin:11px 0 0}.era small{font-size:12px;font-weight:400;color:var(--muted);margin-left:7px}.buttons{display:flex;justify-content:space-between;gap:9px;margin-top:25px;border-top:1px solid var(--line);padding-top:17px;align-items:center}.btn{border:1px solid var(--accent);background:var(--accent);color:#fffaf1;border-radius:5px;padding:9px 16px;min-height:44px;font-weight:650}.btn.secondary{background:transparent;color:var(--accent);border-color:#bca79a}.button-group{display:flex;gap:8px;flex-wrap:wrap}.status{min-height:1.5em;color:#70412a;font-size:13px;margin:7px 0 0}textarea#result{font-size:13px;resize:vertical;min-height:250px;margin-bottom:12px}
+.era{border:1px solid var(--line);border-radius:5px;background:#fcfaf5;margin:8px 0}.era summary{padding:10px 12px;min-height:44px;cursor:pointer;font-weight:600}.era .era-body{padding:0 12px 1px}.era .era-body .field{margin-bottom:10px}.options~.field{margin:11px 0 0}.style-hint{margin:0 0 9px}.era small{font-size:12px;font-weight:400;color:var(--muted);margin-left:7px}.buttons{display:flex;justify-content:space-between;gap:9px;margin-top:25px;border-top:1px solid var(--line);padding-top:17px;align-items:center}.btn{border:1px solid var(--accent);background:var(--accent);color:#fffaf1;border-radius:5px;padding:9px 16px;min-height:44px;font-weight:650}.btn.secondary{background:transparent;color:var(--accent);border-color:#bca79a}.button-group{display:flex;gap:8px;flex-wrap:wrap}.status{min-height:1.5em;color:#70412a;font-size:13px;margin:7px 0 0}textarea#result{font-size:13px;resize:vertical;min-height:250px;margin-bottom:12px}
 @media(max-width:760px){.mast{padding:18px 17px 12px}.layout{grid-template-columns:1fr;gap:12px;padding:0 14px 26px}.intro{min-height:0;padding:20px 20px 23px}.intro h1{font-size:41px;margin:11px 0 4px}.intro .subtitle{font-size:16px}.intro p{margin:9px 0 0;max-width:80%}.intro .rule{display:none}.card{padding:19px 17px;min-height:0}.progress{margin-bottom:18px}h2{font-size:29px}.lead{margin-bottom:17px}.life{padding:9px;min-height:72px}.life .num{font-size:21px}.life small{font-size:11px}.split{grid-template-columns:1fr}.era .split{gap:0}}
 @media(max-width:350px){.life-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mast span{display:none}}
 </style>
@@ -44,7 +44,7 @@ h2,h3{font-family:var(--serif);line-height:1.3}h2{margin:0 0 9px;font-size:34px;
           <label class="field"><span>影片里怎么称呼第二位？</span><input name="nameTwo" maxlength="40" placeholder="姓名、昵称或仅用姓氏"></label>
           <label class="field"><span>婚礼或希望收到影片的日期</span><input name="date" maxlength="80" placeholder="例如：婚礼 10 月 18 日，希望提前一周收到"></label>
           <label class="field"><span>最主要用在哪里？</span><select name="play" data-custom="其他播放用途"><option value="">还没定</option><option>婚礼现场 · 新人入场前</option><option>婚礼现场 · 仪式中或宴会开始时</option><option>婚礼现场 · 宾客候场时</option><option>发给亲友或发布到社交平台</option><option>以上都有</option><option value="other">其他（自定义）</option></select></label>
-          <label class="field"><span>你们希望用什么画幅？</span><select name="ratio" data-custom="自定义画幅（例如 4:3 或现场屏幕尺寸）"><option value="">未确定</option><option>16:9 横屏（适合婚礼大屏）</option><option>9:16 竖屏（适合手机全屏）</option><option>横屏、竖屏都需要</option><option value="other">其他（自定义）</option></select></label>
+          <label class="field"><span>你们希望用什么画幅？</span><select name="ratio" data-custom="自定义画幅（例如 4:3 或现场屏幕尺寸）"><option value="">未确定</option><option>16:9 横屏（适合婚礼大屏）</option><option>9:16 竖屏（适合手机全屏）</option><option>横屏、竖屏都需要（以横屏为主）</option><option value="other">其他（自定义）</option></select></label>
           <label class="field"><span>希望影片有多长？</span><select name="duration" data-custom="自定义时长（例如 2 分 30 秒）"><option value="">未确定</option><option>约 60 秒</option><option>约 90 秒</option><option>约 2 分钟</option><option>约 3 分钟</option><option value="other">其他（自定义）</option></select></label>
         </div>
       </section>
@@ -97,6 +97,64 @@ h2,h3{font-family:var(--serif);line-height:1.3}h2{margin:0 0 9px;font-size:34px;
       <section data-panel="3" aria-labelledby="heading3" hidden>
         <h2 id="heading3" tabindex="-1">什么样的电影像你们？</h2>
         <p class="lead">选你们想看到、想感受到的东西。也可以给一条参考，说说喜欢它哪里。</p>
+        <fieldset>
+          <legend>你们喜欢怎样的画面风格？ <span class="note">· 可跨类别多选</span></legend>
+          <p class="note style-hint">有特别喜欢的一种，可以在下方参考里注明最想要哪种，或说说哪一世想用它。还没想好可以略过。</p>
+          <details class="era" open><summary>真人电影</summary><div class="era-body">
+            <div class="options">
+              <label class="option"><input type="checkbox" name="styleLive" value="写实电影感">写实电影感</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="明亮清新的都市爱情">明亮清新的都市爱情</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="温柔日常的生活电影">温柔日常的生活电影</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="轻松俏皮的爱情喜剧">轻松俏皮的爱情喜剧</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="青春校园">青春校园</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="诗意文艺片">诗意文艺片</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="纪录片纪实">纪录片纪实</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="复古胶片">复古胶片</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="港风复古">港风复古</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="法式浪漫">法式浪漫</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="韩剧式浪漫">韩剧式浪漫</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="时尚杂志大片">时尚杂志大片</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="旅行公路片">旅行公路片</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="民国年代电影">民国年代电影</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="东方古装唯美">东方古装唯美</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="写实古装历史剧">写实古装历史剧</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="江湖武侠">江湖武侠</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="东方仙侠奇幻">东方仙侠奇幻</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="史诗冒险">史诗冒险</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="悬疑黑色电影">悬疑黑色电影</label>
+              <label class="option"><input type="checkbox" name="styleLive" value="未来科幻">未来科幻</label>
+            </div>
+          </div></details>
+          <details class="era"><summary>动画与插画</summary><div class="era-body">
+            <div class="options">
+              <label class="option"><input type="checkbox" name="styleAnimation" value="手绘二维动画">手绘二维动画</label>
+              <label class="option"><input type="checkbox" name="styleAnimation" value="日系动画电影">日系动画电影</label>
+              <label class="option"><input type="checkbox" name="styleAnimation" value="国风二维动画">国风二维动画</label>
+              <label class="option"><input type="checkbox" name="styleAnimation" value="写实三维动画">写实三维动画</label>
+              <label class="option"><input type="checkbox" name="styleAnimation" value="童话三维动画">童话三维动画</label>
+              <label class="option"><input type="checkbox" name="styleAnimation" value="可爱 Q 版动画">可爱 Q 版动画</label>
+              <label class="option"><input type="checkbox" name="styleAnimation" value="水彩绘本">水彩绘本</label>
+              <label class="option"><input type="checkbox" name="styleAnimation" value="水墨动画">水墨动画</label>
+              <label class="option"><input type="checkbox" name="styleAnimation" value="漫画分格">漫画分格</label>
+              <label class="option"><input type="checkbox" name="styleAnimation" value="剪纸皮影">剪纸皮影</label>
+              <label class="option"><input type="checkbox" name="styleAnimation" value="纸艺定格">纸艺定格</label>
+              <label class="option"><input type="checkbox" name="styleAnimation" value="黏土定格">黏土定格</label>
+              <label class="option"><input type="checkbox" name="styleAnimation" value="木偶定格">木偶定格</label>
+              <label class="option"><input type="checkbox" name="styleAnimation" value="像素动画">像素动画</label>
+            </div>
+          </div></details>
+          <details class="era"><summary>真人与动画混合</summary><div class="era-body">
+            <div class="options">
+              <label class="option"><input type="checkbox" name="styleMixed" value="真人角色在手绘世界里">真人角色在手绘世界里</label>
+              <label class="option"><input type="checkbox" name="styleMixed" value="真人角色在奇幻三维世界里">真人角色在奇幻三维世界里</label>
+              <label class="option"><input type="checkbox" name="styleMixed" value="真人画面加入动画点缀">真人画面加入动画点缀</label>
+              <label class="option"><input type="checkbox" name="styleMixed" value="真人与动画分世呈现">真人与动画分世呈现</label>
+            </div>
+          </div></details>
+          <div class="options" style="margin-top:10px">
+            <label class="option"><input type="checkbox" name="styleCustom" value="other" data-detail="请写下你们想要的风格，或描述你们喜欢的样子">其他（自定义）</label>
+          </div>
+        </fieldset>
         <fieldset><legend>最想看到哪种关系瞬间？ <span class="note">· 可多选</span></legend><div class="options">
           <label class="option"><input type="checkbox" name="moments" value="见第一眼就有点在意">见第一眼就有点在意</label>
           <label class="option"><input type="checkbox" name="moments" value="普通日子里的默契">普通日子里的默契</label>
@@ -291,6 +349,10 @@ function summary() {
   add('想看的关系瞬间', choices('moments').join('、'));
   add('希望亲友的感受', selectAnswer(form.elements.mood));
   add('观看体验', selectAnswer(form.elements.look));
+  add('画面风格 · 真人电影', choices('styleLive').join('、'));
+  add('画面风格 · 动画与插画', choices('styleAnimation').join('、'));
+  add('画面风格 · 真人与动画混合', choices('styleMixed').join('、'));
+  add('自定义画面风格', choices('styleCustom').join('、'));
   add('参考及喜欢的地方', value('references'));
 
   lines.push('', '【想保留的细节与公开边界】');
