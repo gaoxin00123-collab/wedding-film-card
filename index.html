@@ -8,12 +8,12 @@
 :root{color-scheme:light;--ink:#282720;--muted:#625d53;--paper:#f6f3ec;--surface:#fffdf8;--line:#dcd4c5;--accent:#614032;--accent-bg:#f3e9df;--serif:"Songti SC","Noto Serif CJK SC","STSong","SimSun",serif}
 *{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--paper);font:15px/1.65 "PingFang SC","Microsoft YaHei",system-ui,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{cursor:default}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}[hidden]{display:none!important}
 .mast{max-width:1120px;margin:auto;padding:32px 28px 22px;display:flex;justify-content:space-between;gap:12px;align-items:center;color:var(--accent)}.mast strong{font-size:13px;letter-spacing:.16em}.mast span{font:italic 17px Georgia,serif}
-.layout{max-width:1120px;margin:auto;padding:0 28px 40px;display:grid;grid-template-columns:304px minmax(0,1fr);gap:20px;align-items:start}.intro{position:relative;overflow:hidden;min-height:420px;background:#3b2b25;color:#fbefe0;padding:37px 31px 44px;border:1px solid #553c30}.intro:after{content:"";position:absolute;width:235px;height:235px;right:-102px;bottom:-111px;border-radius:50%;border:1px solid #b38d6e;box-shadow:0 0 0 17px #3b2b25,0 0 0 18px #805f4e,0 0 0 36px #3b2b25,0 0 0 37px #60483e;pointer-events:none}.eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase}.intro .eyebrow{color:#d6b79a}.intro h1{font-family:var(--serif);font-weight:600;font-size:54px;line-height:1.15;letter-spacing:.045em;margin:34px 0 14px}.intro .subtitle{font:italic 19px Georgia,serif;color:#e7c8ab}.intro p{font-size:14px;color:#ebdbcd;margin:26px 0 0;max-width:225px}.intro .rule{width:40px;border-top:1px solid #b69478;margin-top:32px}
-.card{padding:31px 34px;background:var(--surface);border:1px solid var(--line);min-height:560px}.progress{padding:0;margin:0 0 27px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));list-style:none;gap:8px}.progress button{width:100%;text-align:left;border:0;border-top:2px solid #e5ded2;background:transparent;padding:8px 2px 0;color:#70685c;font-size:12px}.progress button[aria-current="step"]{border-color:var(--accent);color:var(--accent);font-weight:bold}.progress button.done{border-color:#ad8d76;color:var(--accent)}.progress button:disabled{opacity:.72}
+.layout{max-width:1120px;margin:auto;padding:0 28px 40px;display:grid;grid-template-columns:304px minmax(0,1fr);gap:20px;align-items:start}.intro{position:relative;overflow:hidden;min-height:420px;background:#3b2b25;color:#fbefe0;padding:37px 31px 44px;border:1px solid #553c30}.intro:after{content:"";position:absolute;width:235px;height:235px;right:-102px;bottom:-111px;border-radius:50%;border:1px solid #b38d6e;box-shadow:0 0 0 17px #3b2b25,0 0 0 18px #805f4e,0 0 0 36px #3b2b25,0 0 0 37px #60483e;pointer-events:none}.eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase}.intro .eyebrow{color:#d6b79a}.intro h1{font-family:var(--serif);font-weight:600;font-size:54px;line-height:1.15;letter-spacing:.045em;margin:34px 0 14px}.intro .subtitle{font:italic 19px Georgia,serif;color:#e7c8ab}.intro p{font-size:14px;color:#ebdbcd;margin:26px 0 0;max-width:225px}.studio-mark{position:absolute;z-index:1;right:20px;bottom:15px;color:#efd4bd;font:12px/1.25 Georgia,serif;letter-spacing:.08em}.intro .rule{width:40px;border-top:1px solid #b69478;margin-top:32px}
+.top-back{display:block;margin:0 0 13px;border:0;background:transparent;color:var(--accent);padding:4px 8px 4px 0;min-height:44px;font-size:14px;font-weight:650}.top-back:hover{text-decoration:underline}.card{padding:31px 34px;background:var(--surface);border:1px solid var(--line);min-height:560px}.progress{padding:0;margin:0 0 27px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));list-style:none;gap:8px}.progress button{width:100%;text-align:left;border:0;border-top:2px solid #e5ded2;background:transparent;padding:8px 2px 0;color:#70685c;font-size:12px}.progress button[aria-current="step"]{border-color:var(--accent);color:var(--accent);font-weight:bold}.progress button.done{border-color:#ad8d76;color:var(--accent)}.progress button:disabled{opacity:.72}
 h2,h3{font-family:var(--serif);line-height:1.3}h2{margin:0 0 9px;font-size:34px;font-weight:600}h3{font-size:21px;margin:0 0 8px}.lead{margin:0 0 23px;color:var(--muted)}fieldset{border:0;margin:0 0 20px;padding:0;min-width:0}legend,.field>span{font-weight:650;margin-bottom:8px;display:block}.field{display:block;margin:0 0 15px}.field input,.field select,.field textarea,textarea#result{width:100%;background:#faf8f2;border:1px solid var(--line);border-radius:5px;padding:9px 11px;color:var(--ink);min-height:43px}.field textarea{resize:vertical}.options{display:flex;flex-wrap:wrap;gap:8px}.option{position:relative;display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:5px;background:#faf8f2;padding:8px 11px;min-height:43px;cursor:pointer}.option:has(input:checked),.life:has(input:checked){border-color:#9c6c53;background:var(--accent-bg);color:#4d2c1d}.option input,.life input{accent-color:var(--accent);margin:0;width:16px;height:16px;flex:none}
 .life-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.life{background:#faf8f2;border:1px solid var(--line);padding:12px 13px;border-radius:5px;min-height:85px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-content:center;cursor:pointer}.life .num{font:26px/1.1 Georgia,var(--serif);letter-spacing:.02em}.life small{grid-column:1/-1;margin-top:5px;color:var(--muted)}.split{display:grid;grid-template-columns:1fr 1fr;gap:10px 13px}.note{font-size:13px;color:var(--muted)}
-.era{border:1px solid var(--line);border-radius:5px;background:#fcfaf5;margin:8px 0}.era summary{padding:10px 12px;min-height:44px;cursor:pointer;font-weight:600}.era .era-body{padding:0 12px 1px}.era .era-body .field{margin-bottom:10px}.options~.field{margin:11px 0 0}.style-hint{margin:0 0 9px}.material-note{grid-column:1/-1;margin:0 0 15px;padding:13px 15px;border:1px solid var(--line);border-radius:5px;background:#fcfaf5}.material-note strong{color:var(--accent)}.material-note p{font-size:13px;color:var(--muted);margin:5px 0 0}.era small{font-size:12px;font-weight:400;color:var(--muted);margin-left:7px}.buttons{display:flex;justify-content:space-between;gap:9px;margin-top:25px;border-top:1px solid var(--line);padding-top:17px;align-items:center}.btn{border:1px solid var(--accent);background:var(--accent);color:#fffaf1;border-radius:5px;padding:9px 16px;min-height:44px;font-weight:650}.btn.secondary{background:transparent;color:var(--accent);border-color:#bca79a}.button-group{display:flex;gap:8px;flex-wrap:wrap}.status{min-height:1.5em;color:#70412a;font-size:13px;margin:7px 0 0}textarea#result{font-size:13px;resize:vertical;min-height:250px;margin-bottom:12px}
-@media(max-width:760px){.mast{padding:18px 17px 12px}.layout{grid-template-columns:1fr;gap:12px;padding:0 14px 26px}.intro{min-height:0;padding:20px 20px 23px}.intro h1{font-size:41px;margin:11px 0 4px}.intro .subtitle{font-size:16px}.intro p{margin:9px 0 0;max-width:80%}.intro .rule{display:none}.card{padding:19px 17px;min-height:0}.progress{margin-bottom:18px}h2{font-size:29px}.lead{margin-bottom:17px}.life{padding:9px;min-height:72px}.life .num{font-size:21px}.life small{font-size:11px}.split{grid-template-columns:1fr}.era .split{gap:0}}
+.era{border:1px solid var(--line);border-radius:5px;background:#fcfaf5;margin:8px 0}.era summary{padding:10px 12px;min-height:44px;cursor:pointer;font-weight:600}.era .era-body{padding:0 12px 1px}.era .era-body .field{margin-bottom:10px}.options~.field{margin:11px 0 0}.style-hint{margin:0 0 9px}.validation-message{color:#9a2d1d;font-size:13px;font-weight:650;margin:5px 0 8px}[aria-invalid="true"]{outline:2px solid #9a2d1d;outline-offset:2px}.material-note{grid-column:1/-1;margin:0 0 15px;padding:13px 15px;border:1px solid var(--line);border-radius:5px;background:#fcfaf5}.material-note strong{color:var(--accent)}.material-note p{font-size:13px;color:var(--muted);margin:5px 0 0}.era small{font-size:12px;font-weight:400;color:var(--muted);margin-left:7px}.buttons{display:flex;justify-content:space-between;gap:9px;margin-top:25px;border-top:1px solid var(--line);padding-top:17px;align-items:center}.btn{border:1px solid var(--accent);background:var(--accent);color:#fffaf1;border-radius:5px;padding:9px 16px;min-height:44px;font-weight:650}.btn.secondary{background:transparent;color:var(--accent);border-color:#bca79a}.button-group{display:flex;gap:8px;flex-wrap:wrap}.status{min-height:1.5em;color:#70412a;font-size:13px;margin:7px 0 0}textarea#result{font-size:13px;resize:vertical;min-height:250px;margin-bottom:12px}
+@media(max-width:760px){.mast{padding:18px 17px 12px}.layout{grid-template-columns:1fr;gap:12px;padding:0 14px 26px}.intro{min-height:0;padding:20px 20px 43px}.intro h1{font-size:41px;margin:11px 0 4px}.intro .subtitle{font-size:16px}.intro p{margin:9px 0 0;max-width:80%}.intro .rule{display:none}.card{padding:19px 17px;min-height:0}.progress{margin-bottom:18px}h2{font-size:29px}.lead{margin-bottom:17px}.life{padding:9px;min-height:72px}.life .num{font-size:21px}.life small{font-size:11px}.split{grid-template-columns:1fr}.era .split{gap:0}}
 @media(max-width:350px){.life-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mast span{display:none}}
 </style>
 </head>
@@ -26,6 +26,7 @@ h2,h3{font-family:var(--serif);line-height:1.3}h2{margin:0 0 9px;font-size:34px;
     <div class="subtitle">Across Lifetimes</div>
     <p>说说你们怎么走到今天，也选选想在电影里体验的故事。你们给出喜好和边界，制作方会据此设计故事，再给你们确认。</p>
     <div class="rule" aria-hidden="true"></div>
+    <span class="studio-mark">one frame studio</span>
   </aside>
   <article class="card">
     <nav aria-label="填写步骤"><ol class="progress">
@@ -35,59 +36,61 @@ h2,h3{font-family:var(--serif);line-height:1.3}h2{margin:0 0 9px;font-size:34px;
       <li><button type="button" data-step="3">04 喜好</button></li>
       <li><button type="button" data-step="4">05 确认</button></li>
     </ol></nav>
+    <button class="top-back" type="button" id="topBack" hidden>← 返回上一步</button>
     <form id="brief" novalidate>
       <section data-panel="0" aria-labelledby="heading0">
         <h2 id="heading0" tabindex="-1">先认识你们</h2>
-        <p class="lead">写下已经确定的安排。还没定的，留空就好。</p>
+        <p class="lead">每页的问题都要作答。还没想好可以选「未确定」，文字题可以填「无」或「暂不公开」。</p>
         <div class="split">
-          <label class="field"><span>影片里怎么称呼第一位？</span><input name="nameOne" maxlength="40" placeholder="姓名、昵称或仅用姓氏"></label>
-          <label class="field"><span>影片里怎么称呼第二位？</span><input name="nameTwo" maxlength="40" placeholder="姓名、昵称或仅用姓氏"></label>
+          <label class="field"><span>影片里怎么称呼第一位？</span><input required name="nameOne" maxlength="40" placeholder="姓名、昵称或仅用姓氏"></label>
+          <label class="field"><span>影片里怎么称呼第二位？</span><input required name="nameTwo" maxlength="40" placeholder="姓名、昵称或仅用姓氏"></label>
           <aside class="material-note" aria-label="照片和声音参考">
             <strong>请两位分别准备照片和录音</strong>
             <p><b>照片</b> · 生活照和婚纱照都可以。每人尽量提供几张清晰原图，正脸、斜侧脸和侧脸都可发。</p>
             <p><b>录音</b> · 两位各用手机「语音备忘录」或录音 App 录一小段自然说话的声音，选安静的地方录就好。</p>
             <p>照片和录音请通过微信另发给制作方，作为影片制作参考。</p>
           </aside>
-          <label class="field"><span>婚礼或希望收到影片的日期</span><input name="date" maxlength="80" placeholder="例如：婚礼 10 月 18 日，希望提前一周收到"></label>
-          <label class="field"><span>最主要用在哪里？</span><select name="play" data-custom="其他播放用途"><option value="">还没定</option><option>婚礼现场 · 新人入场前</option><option>婚礼现场 · 仪式中或宴会开始时</option><option>婚礼现场 · 宾客候场时</option><option>发给亲友或发布到社交平台</option><option>以上都有</option><option value="other">其他（自定义）</option></select></label>
-          <label class="field"><span>你们希望用什么画幅？</span><select name="ratio" data-custom="自定义画幅（例如 4:3 或现场屏幕尺寸）"><option value="">未确定</option><option>16:9 横屏（适合婚礼大屏）</option><option>9:16 竖屏（适合手机全屏）</option><option>横屏、竖屏都需要（以横屏为主）</option><option value="other">其他（自定义）</option></select></label>
-          <label class="field"><span>希望影片有多长？</span><select name="duration" data-custom="自定义时长（例如 2 分 30 秒）"><option value="">未确定</option><option>约 60 秒</option><option>约 90 秒</option><option>约 2 分钟</option><option>约 3 分钟</option><option value="other">其他（自定义）</option></select></label>
+          <label class="field"><span>婚礼或希望收到影片的日期</span><input required name="date" maxlength="80" placeholder="例如：婚礼 10 月 18 日，或填写「未确定」"></label>
+          <label class="field"><span>最主要用在哪里？</span><select required name="play" data-custom="其他播放用途"><option value="">请选择</option><option>未确定</option><option>婚礼现场 · 新人入场前</option><option>婚礼现场 · 仪式中或宴会开始时</option><option>婚礼现场 · 宾客候场时</option><option>发给亲友或发布到社交平台</option><option>以上都有</option><option value="other">其他（自定义）</option></select></label>
+          <label class="field"><span>你们希望用什么画幅？</span><select required name="ratio" data-custom="自定义画幅（例如 4:3 或现场屏幕尺寸）"><option value="">请选择</option><option>未确定</option><option>16:9 横屏（适合婚礼大屏）</option><option>9:16 竖屏（适合手机全屏）</option><option>横屏、竖屏都需要（以横屏为主）</option><option value="other">其他（自定义）</option></select></label>
+          <label class="field"><span>希望影片有多长？</span><select required name="duration" data-custom="自定义时长（例如 2 分 30 秒）"><option value="">请选择</option><option>未确定</option><option>约 60 秒</option><option>约 90 秒</option><option>约 2 分钟</option><option>约 3 分钟</option><option value="other">其他（自定义）</option></select></label>
         </div>
       </section>
       <section data-panel="1" aria-labelledby="heading1" hidden>
         <h2 id="heading1" tabindex="-1">你们是怎么走到今天的？</h2>
-        <p class="lead">从真实经历里挑一两件想分享的小事就够。每段都可以略过，尤其是你们想留给自己的部分。</p>
+        <p class="lead">写你们愿意分享的真实经历。记不清或想留给自己的部分，可以选相应选项，文字栏填「记不清」或「暂不公开」。</p>
         <details class="era" open><summary>01 · 第一次注意到对方</summary><div class="era-body">
-          <label class="field"><span>你们是怎么认识的？</span><select name="metType"><option value="">选最接近的一项</option><option>同学或校友</option><option>工作认识</option><option>亲友介绍</option><option>网上认识</option><option>旅行、活动或偶遇</option><option>从小就认识</option><option>其他（请在下方补充）</option></select></label>
-          <label class="field"><span>那次是在哪里？谁先注意到谁？</span><textarea name="metStory" rows="2" maxlength="650" placeholder="一个地点、对方当时做的事，或一句你还记得的开场白。"></textarea></label>
+          <label class="field"><span>你们是怎么认识的？</span><select required name="metType"><option value="">请选择</option><option>记不清或暂不公开</option><option>同学或校友</option><option>工作认识</option><option>亲友介绍</option><option>网上认识</option><option>旅行、活动或偶遇</option><option>从小就认识</option><option>其他（请在下方补充）</option></select></label>
+          <label class="field"><span>那次是在哪里？谁先注意到谁？</span><textarea required name="metStory" rows="2" maxlength="650" placeholder="一个地点、对方当时做的事，或一句你还记得的开场白。"></textarea></label>
         </div></details>
         <details class="era"><summary>02 · 某个突然心动的瞬间</summary><div class="era-body">
-          <label class="field"><span>你记得的是哪类小事？</span><select name="closeType"><option value="">选最接近的一项</option><option>生病或低落时被照顾</option><option>记住了我随口说过的话</option><option>一起度过一次难忘的出游</option><option>深夜聊天、写信或等电话</option><option>一顿饭或一个寻常的日子</option><option>其他（请在下方补充）</option></select></label>
-          <label class="field"><span>对方具体做了什么？你当时怎么想？</span><textarea name="closeStory" rows="2" maxlength="650" placeholder="例如：我说随便买点吃的，他却记得那家店我只吃哪一样。"></textarea></label>
+          <label class="field"><span>你记得的是哪类小事？</span><select required name="closeType"><option value="">请选择</option><option>没有特别想分享的瞬间</option><option>记不清或暂不公开</option><option>生病或低落时被照顾</option><option>记住了我随口说过的话</option><option>一起度过一次难忘的出游</option><option>深夜聊天、写信或等电话</option><option>一顿饭或一个寻常的日子</option><option>其他（请在下方补充）</option></select></label>
+          <label class="field"><span>对方具体做了什么？你当时怎么想？</span><textarea required name="closeStory" rows="2" maxlength="650" placeholder="例如：我说随便买点吃的，他却记得那家店我只吃哪一样。"></textarea></label>
         </div></details>
         <details class="era"><summary>03 · 决定一起往前走</summary><div class="era-body">
-          <label class="field"><span>哪件事最能代表这一步？</span><select name="choiceType"><option value="">选最接近的一项</option><option>表白或求婚</option><option>异地后终于见面</option><option>为了对方换了城市或生活计划</option><option>一起熬过一段困难的时间</option><option>没有大事件，是慢慢确定的</option><option>其他（请在下方补充）</option></select></label>
-          <label class="field"><span>那一天发生了什么？</span><textarea name="choiceStory" rows="2" maxlength="650" placeholder="谁先开口，或者谁先做了什么？记得原话的话，也可以写下来。"></textarea></label>
+          <label class="field"><span>哪件事最能代表这一步？</span><select required name="choiceType"><option value="">请选择</option><option>记不清或暂不公开</option><option>表白或求婚</option><option>异地后终于见面</option><option>为了对方换了城市或生活计划</option><option>一起熬过一段困难的时间</option><option>没有大事件，是慢慢确定的</option><option>其他（请在下方补充）</option></select></label>
+          <label class="field"><span>那一天发生了什么？</span><textarea required name="choiceStory" rows="2" maxlength="650" placeholder="谁先开口，或者谁先做了什么？记得原话的话，也可以写下来。"></textarea></label>
         </div></details>
         <details class="era"><summary>04 · 一个很像你们的日常</summary><div class="era-body">
-          <label class="field"><span>如果只能留下一幅真实的画面，会是什么？</span><textarea name="daily" rows="2" maxlength="650" placeholder="例如：每天散步都走同一段路；周末一起做饭；下班见面时总有一句玩笑。"></textarea></label>
+          <label class="field"><span>如果只能留下一幅真实的画面，会是什么？</span><textarea required name="daily" rows="2" maxlength="650" placeholder="例如：每天散步都走同一段路；周末一起做饭；下班见面时总有一句玩笑。"></textarea></label>
         </div></details>
       </section>
       <section data-panel="2" aria-labelledby="heading2" hidden>
         <h2 id="heading2" tabindex="-1">想和对方走过几世？</h2>
-        <p class="lead">可以只选世数，或挑一个特别想看的世界。每一世怎么发生，由制作方设计。</p>
-        <fieldset><legend>你们倾向几世？ <span class="note">· 选一项</span></legend>
+        <p class="lead">选出你们倾向的世数和世界。没有偏好就选「未确定」。每一世怎么发生，由制作方设计。</p>
+        <fieldset data-required-choice><legend>你们倾向几世？ <span class="note">· 选一项</span></legend>
           <div class="life-grid">
             <label class="life"><span class="num">二生二世</span><input required type="radio" name="count" value="2"></label>
             <label class="life"><span class="num">三生三世</span><input type="radio" name="count" value="3"></label>
             <label class="life"><span class="num">四生四世</span><input type="radio" name="count" value="4"></label>
             <label class="life"><span class="num">五生五世</span><input type="radio" name="count" value="5"></label>
             <label class="life"><span class="num">六生六世</span><input type="radio" name="count" value="6"></label>
-            <label class="life"><span class="num">其他</span><input type="radio" name="count" value="other"><small>自定或请制作方推荐</small></label>
+            <label class="life"><span class="num">其他</span><input type="radio" name="count" value="other"><small>自定义世数</small></label>
+            <label class="life"><span class="num">未确定</span><input type="radio" name="count" value="undecided"></label>
           </div>
         </fieldset>
-        <label class="field" id="customCount" hidden><span>自定世数 <small class="note">（留空表示请制作方推荐）</small></span><input type="number" inputmode="numeric" name="otherCount" min="2" max="12" step="1" placeholder="填写 2–12"></label>
-        <fieldset><legend>哪些世界让你们有兴趣？ <span class="note">· 可多选</span></legend><div class="options">
+        <label class="field" id="customCount" hidden><span>自定世数</span><input type="number" inputmode="numeric" required name="otherCount" min="2" max="12" step="1" placeholder="填写 2–12"></label>
+        <fieldset data-required-choice><legend>哪些世界让你们有兴趣？ <span class="note">· 可多选</span></legend><div class="options">
           <label class="option"><input type="checkbox" name="world" value="古代江湖">古代江湖</label>
           <label class="option"><input type="checkbox" name="world" value="古代市井">古代市井</label>
           <label class="option"><input type="checkbox" name="world" value="民国旧时光">民国旧时光</label>
@@ -95,17 +98,21 @@ h2,h3{font-family:var(--serif);line-height:1.3}h2{margin:0 0 9px;font-size:34px;
           <label class="option"><input type="checkbox" name="world" value="当代生活">当代生活</label>
           <label class="option"><input type="checkbox" name="world" value="架空或未来">架空或未来</label>
           <label class="option"><input type="checkbox" name="world" value="other" data-detail="想看的其他年代或世界">其他（自定义）</label>
+          <label class="option"><input type="checkbox" name="world" value="未确定" data-exclusive>未确定</label>
         </div></fieldset>
-        <label class="field"><span>有没有特别想保留的年代、身份或画面？</span><textarea name="worldMust" rows="2" maxlength="650" placeholder="例如：一定要有民国；想当一世并肩远行的旅人。写一句就行。"></textarea></label>
-        <details class="era" id="chapterPicker" hidden><summary>已想好某一世？选年代或想看的故事 <small>选填</small></summary><div class="era-body"><div id="eras"></div></div></details>
-        <label class="field" style="margin-top:15px"><span>你们想在影片里保留多少真实经历？</span><select name="basis" data-custom="哪些真实内容想保留？希望怎么呈现？"><option value="">请选择（选填）</option><option>重现真实经历 · 保留发生过的事与先后顺序</option><option>换个年代重演 · 保留事件和情感，换时代与身份</option><option>只在现世讲真实经历 · 前几世可以虚构</option><option>各世可以虚构 · 保留真实的一句话、物件或习惯</option><option>可以全篇虚构 · 保留两个人的性格和关系</option><option value="other">其他（自定义）</option></select></label>
+        <label class="field"><span>有没有特别想保留的年代、身份或画面？</span><textarea required name="worldMust" rows="2" maxlength="650" placeholder="例如：一定要有民国；想当一世并肩远行的旅人。写一句就行。"></textarea></label>
+        <div id="chapterPlanning" hidden>
+          <label class="field"><span>有没有某一世已经有具体想法？</span><select name="chapterPlan" required><option value="">请选择</option><option value="some">有，想分开写</option><option value="none">暂时没有</option></select></label>
+          <details class="era" id="chapterPicker" hidden><summary>分世选择年代和故事</summary><div class="era-body"><div id="eras"></div></div></details>
+        </div>
+        <label class="field" style="margin-top:15px"><span>你们想在影片里保留多少真实经历？</span><select required name="basis" data-custom="哪些真实内容想保留？希望怎么呈现？"><option value="">请选择</option><option>未确定</option><option>重现真实经历 · 保留发生过的事与先后顺序</option><option>换个年代重演 · 保留事件和情感，换时代与身份</option><option>只在现世讲真实经历 · 前几世可以虚构</option><option>各世可以虚构 · 保留真实的一句话、物件或习惯</option><option>可以全篇虚构 · 保留两个人的性格和关系</option><option value="other">其他（自定义）</option></select></label>
       </section>
       <section data-panel="3" aria-labelledby="heading3" hidden>
         <h2 id="heading3" tabindex="-1">什么样的电影像你们？</h2>
         <p class="lead">选你们想看到、想感受到的东西。也可以给一条参考，说说喜欢它哪里。</p>
-        <fieldset>
+        <fieldset data-required-choice>
           <legend>你们喜欢怎样的画面风格？ <span class="note">· 可跨类别多选</span></legend>
-          <p class="note style-hint">有特别喜欢的一种，可以在下方参考里注明最想要哪种，或说说哪一世想用它。还没想好可以略过。</p>
+          <p class="note style-hint">有特别喜欢的一种，可以在下方参考里注明最想要哪种，或说说哪一世想用它。还没想好请选择「未确定」。</p>
           <details class="era" open><summary>真人电影</summary><div class="era-body">
             <div class="options">
               <label class="option"><input type="checkbox" name="styleLive" value="写实电影感">写实电影感</label>
@@ -159,9 +166,10 @@ h2,h3{font-family:var(--serif);line-height:1.3}h2{margin:0 0 9px;font-size:34px;
           </div></details>
           <div class="options" style="margin-top:10px">
             <label class="option"><input type="checkbox" name="styleCustom" value="other" data-detail="请写下你们想要的风格，或描述你们喜欢的样子">其他（自定义）</label>
+            <label class="option"><input type="checkbox" name="styleUndecided" value="未确定" data-exclusive>未确定</label>
           </div>
         </fieldset>
-        <fieldset><legend>最想看到哪种关系瞬间？ <span class="note">· 可多选</span></legend><div class="options">
+        <fieldset data-required-choice><legend>最想看到哪种关系瞬间？ <span class="note">· 可多选</span></legend><div class="options">
           <label class="option"><input type="checkbox" name="moments" value="见第一眼就有点在意">见第一眼就有点在意</label>
           <label class="option"><input type="checkbox" name="moments" value="普通日子里的默契">普通日子里的默契</label>
           <label class="option"><input type="checkbox" name="moments" value="遇到事时站在一起">遇到事时站在一起</label>
@@ -169,33 +177,36 @@ h2,h3{font-family:var(--serif);line-height:1.3}h2{margin:0 0 9px;font-size:34px;
           <label class="option"><input type="checkbox" name="moments" value="明明喜欢却说不出口">明明喜欢却说不出口</label>
           <label class="option"><input type="checkbox" name="moments" value="终于一起走进婚礼">终于一起走进婚礼</label>
           <label class="option"><input type="checkbox" name="moments" value="other" data-detail="想看的其他关系瞬间">其他（自定义）</label>
+          <label class="option"><input type="checkbox" name="moments" value="没有特别偏好" data-exclusive>没有特别偏好</label>
         </div></fieldset>
         <div class="split">
-          <label class="field"><span>希望亲友看完是什么心情？</span><select name="mood" data-custom="你希望大家感受到什么？"><option value="">听听制作方的想法</option><option>想笑，也觉得这很像我们</option><option>温柔、有余韵</option><option>有一点鼻酸，最后是幸福的</option><option>越看越热烈，最后想鼓掌</option><option value="other">其他（自定义）</option></select></label>
-          <label class="field"><span>你们更喜欢哪种观看体验？</span><select name="look" data-custom="你喜欢怎样的观看体验？"><option value="">听听制作方的想法</option><option>像看一部有情节的电影</option><option>像翻一本有画面和音乐的回忆册</option><option>故事和氛围都想要</option><option value="other">其他（自定义）</option></select></label>
+          <label class="field"><span>希望亲友看完是什么心情？</span><select required name="mood" data-custom="你希望大家感受到什么？"><option value="">请选择</option><option>未确定</option><option>想笑，也觉得这很像我们</option><option>温柔、有余韵</option><option>有一点鼻酸，最后是幸福的</option><option>越看越热烈，最后想鼓掌</option><option value="other">其他（自定义）</option></select></label>
+          <label class="field"><span>你们更喜欢哪种观看体验？</span><select required name="look" data-custom="你喜欢怎样的观看体验？"><option value="">请选择</option><option>未确定</option><option>像看一部有情节的电影</option><option>像翻一本有画面和音乐的回忆册</option><option>故事和氛围都想要</option><option value="other">其他（自定义）</option></select></label>
         </div>
-        <label class="field"><span>有喜欢的电影、照片或音乐吗？喜欢它哪里？</span><textarea name="references" rows="2" maxlength="1000" placeholder="片名或链接都行。例如：喜欢那段明亮的逆光、两个人说话的感觉，或某首歌前奏的情绪。"></textarea></label>
+        <label class="field"><span>有喜欢的电影、照片或音乐吗？喜欢它哪里？</span><textarea required name="references" rows="2" maxlength="1000" placeholder="可以写片名、链接和喜欢的地方。没有参考就填「无」。"></textarea></label>
       </section>
       <section data-panel="4" aria-labelledby="heading4" hidden>
         <h2 id="heading4" tabindex="-1">有哪些一定要留，或不想公开的？</h2>
         <p class="lead">这一步关系到亲友最终会看到什么。拿不准的内容，也可以写「先和我们确认」。</p>
-        <fieldset><legend>想让什么出现在电影里？ <span class="note">· 可多选</span></legend><div class="options">
+        <fieldset data-required-choice><legend>想让什么出现在电影里？ <span class="note">· 可多选</span></legend><div class="options">
           <label class="option"><input type="checkbox" name="keeps" value="宠物" data-detail="宠物叫什么？它有什么一眼能认出来的特征？">宠物</label>
           <label class="option"><input type="checkbox" name="keeps" value="有意义的物件" data-detail="是哪件物品？它为什么重要？">有意义的物件</label>
           <label class="option"><input type="checkbox" name="keeps" value="某个地方" data-detail="是哪里？有没有想让大家认出来的细节？">某个地方</label>
           <label class="option"><input type="checkbox" name="keeps" value="一句原话或暗号" data-detail="请写下原话，谁经常说这句话？">一句原话或暗号</label>
           <label class="option"><input type="checkbox" name="keeps" value="亲友或共同回忆" data-detail="哪位亲友？叫什么、跟你们是什么关系？想放进哪段回忆？">亲友或共同回忆</label>
           <label class="option"><input type="checkbox" name="keeps" value="other" data-detail="还有什么想放进影片？">其他（自定义）</label>
+          <label class="option"><input type="checkbox" name="keeps" value="没有特别要加入的元素" data-exclusive>没有特别要加入的元素</label>
         </div></fieldset>
-        <fieldset><legend>哪些桥段要避开？ <span class="note">· 可多选</span></legend><div class="options">
+        <fieldset data-required-choice><legend>哪些桥段要避开？ <span class="note">· 可多选</span></legend><div class="options">
           <label class="option"><input type="checkbox" name="avoid" value="亲吻等亲密镜头" data-detail="有哪些亲密动作要避开？例如可以牵手拥抱，但不要亲吻。">亲吻等亲密镜头</label>
           <label class="option"><input type="checkbox" name="avoid" value="生离死别" data-detail="想避开哪些离别情节？例如不出现永别。">生离死别</label>
           <label class="option"><input type="checkbox" name="avoid" value="打斗或受伤" data-detail="想避开哪些冲突或受伤画面？">打斗或受伤</label>
           <label class="option"><input type="checkbox" name="avoid" value="点名或出现亲友" data-detail="哪位亲友不能露脸、被提名或被写进剧情？请注明范围。">点名或出现亲友</label>
           <label class="option"><input type="checkbox" name="avoid" value="other" data-detail="还有什么不想出现在影片里？">其他（自定义）</label>
+          <label class="option"><input type="checkbox" name="avoid" value="没有特别要避开的桥段" data-exclusive>没有特别要避开的桥段</label>
         </div></fieldset>
-        <label class="field"><span>还有什么只想私下说，或要先问你们？</span><textarea name="boundary" rows="2" maxlength="650" placeholder="例如：某段经历可以帮制作方理解我们，但别写进影片。"></textarea></label>
-        <label class="field"><span>如果最后能留一句话，你想对谁说什么？</span><textarea name="ending" rows="2" maxlength="650" placeholder="可以对彼此、对来宾说，也可以留空，请制作方提案。"></textarea></label>
+        <label class="field"><span>还有什么只想私下说，或要先问你们？</span><textarea required name="boundary" rows="2" maxlength="650" placeholder="例如：某段经历可以帮制作方理解我们，但别写进影片。"></textarea></label>
+        <label class="field"><span>如果最后能留一句话，你想对谁说什么？</span><textarea required name="ending" rows="2" maxlength="650" placeholder="可以对彼此或来宾说。还没想好就填「未确定」，想让制作方提案也可以直接写。"></textarea></label>
       </section>
       <section id="exportPanel" aria-labelledby="heading5" hidden>
         <h2 id="heading5" tabindex="-1">故事卡已整理好</h2>
@@ -204,7 +215,7 @@ h2,h3{font-family:var(--serif);line-height:1.3}h2{margin:0 0 9px;font-size:34px;
         <div class="button-group"><button class="btn" type="button" id="copy">复制完整故事卡</button><button class="btn secondary" type="button" id="download">保存为 TXT</button></div>
         <p class="status" id="status" role="status"></p>
       </section>
-      <footer class="buttons"><button class="btn secondary" type="button" id="back" hidden>上一步</button><span class="note" id="tip">按你们自己的节奏填</span><button class="btn" type="submit" id="next">下一步</button></footer>
+      <footer class="buttons"><button class="btn secondary" type="button" id="back" hidden>返回上一步</button><span class="note" id="tip">按你们自己的节奏填</span><button class="btn" type="submit" id="next">下一步</button></footer>
     </form>
   </article>
 </main>
@@ -222,18 +233,15 @@ const result = document.querySelector('#result');
 const status = document.querySelector('#status');
 const next = document.querySelector('#next');
 const back = document.querySelector('#back');
+const topBack = document.querySelector('#topBack');
 const chapters = [];
 let page = 0;
 let reached = 0;
 
 function value(name) { return form.elements[name].value.trim(); }
 function selectedCount() {
-  if (value('count') !== 'other') return Number(value('count'));
+  if (value('count') !== 'other') return Number(value('count')) || 0;
   return otherCount.validity.valid ? Number(value('otherCount')) : 0;
-}
-function checkCount() {
-  if (!value('count')) return form.querySelector('input[name="count"]').reportValidity();
-  return value('count') !== 'other' || otherCount.reportValidity();
 }
 function makeSupplement(control, question, parent, active) {
   const label = document.createElement('label');
@@ -242,6 +250,7 @@ function makeSupplement(control, question, parent, active) {
   prompt.textContent = question;
   const input = document.createElement('input');
   input.maxLength = 300;
+  input.required = true;
   label.append(prompt, input);
   if (parent) parent.append(label);
   else control.closest('.field').after(label);
@@ -276,7 +285,9 @@ function makeChapter(index) {
     const prompt = document.createElement('span');
     prompt.textContent = title;
     const select = document.createElement('select');
-    select.add(new Option('请选择（选填）', ''));
+    select.required = true;
+    select.add(new Option('请选择', ''));
+    select.add(new Option('未确定'));
     items.forEach(item => select.add(new Option(item)));
     select.add(new Option('其他（自定义）', 'other'));
     label.append(prompt, select);
@@ -294,12 +305,14 @@ function makeChapter(index) {
 function refreshChapters() {
   const count = selectedCount();
   while (chapters.length < count) chapters.push(makeChapter(chapters.length));
-  chapterPicker.hidden = !count;
+  document.querySelector('#chapterPlanning').hidden = !count;
+  chapterPicker.hidden = !count || value('chapterPlan') !== 'some';
   eraList.replaceChildren(...chapters.slice(0, count).map(chapter => chapter.panel));
 }
 function show(step, focus = true) {
   if (step === countStep) refreshChapters();
-  if (step === exportStep) result.value = summary();
+  clearValidation();
+  result.value = step === exportStep ? summary() : '';
   status.textContent = '';
   page = step;
   reached = Math.max(reached, step);
@@ -310,10 +323,12 @@ function show(step, focus = true) {
     if (i === step) button.setAttribute('aria-current', 'step');
     else button.removeAttribute('aria-current');
   });
-  back.hidden = step === 0;
+  back.hidden = step === 0 || step === exportStep;
+  topBack.hidden = step === 0;
+  topBack.textContent = step === exportStep ? '← 返回修改' : '← 返回上一步';
   next.hidden = step === exportStep;
   next.textContent = step === exportStep - 1 ? '整理故事卡' : '下一步';
-  document.querySelector('#tip').textContent = step === exportStep ? '关闭页面前请复制或保存' : '未确定的细节可以跳过';
+  document.querySelector('#tip').textContent = step === exportStep ? '关闭页面前请复制或保存' : '每页问题均需作答';
   if (focus) panels[step].querySelector('h2').focus();
 }
 const choiceDetails = new Map();
@@ -342,15 +357,17 @@ function summary() {
   story('心动的小事', 'closeType', 'closeStory');
   story('决定一起走', 'choiceType', 'choiceStory');
   add('我们的日常', value('daily'));
-  if (lines.at(-1).startsWith('【')) lines.push('这次未填写真实经历。');
 
   lines.push('', '【虚构世界与观看偏好】');
-  add('倾向世数', count ? count + ' 世' : '请制作方建议');
+  add('倾向世数', count ? count + ' 世' : '未确定');
   add('感兴趣的时代', choices('world').join('、'));
   add('特别想保留的时代、身份或画面', value('worldMust'));
-  chapters.slice(0, count).forEach((chapter, index) => {
-    add('第 ' + (index + 1) + ' 世的想法', [selectAnswer(chapter.era), selectAnswer(chapter.moment)].filter(Boolean).join('｜'));
-  });
+  if (count && value('chapterPlan') === 'none') add('分世想法', '暂时没有');
+  if (count && value('chapterPlan') === 'some') {
+    chapters.slice(0, count).forEach((chapter, index) => {
+      add('第 ' + (index + 1) + ' 世的想法', [selectAnswer(chapter.era), selectAnswer(chapter.moment)].join('｜'));
+    });
+  }
   add('真实经历的改编方式', selectAnswer(form.elements.basis));
   add('想看的关系瞬间', choices('moments').join('、'));
   add('希望亲友的感受', selectAnswer(form.elements.mood));
@@ -359,6 +376,7 @@ function summary() {
   add('画面风格 · 动画与插画', choices('styleAnimation').join('、'));
   add('画面风格 · 真人与动画混合', choices('styleMixed').join('、'));
   add('自定义画面风格', choices('styleCustom').join('、'));
+  add('画面风格', choices('styleUndecided').join('、'));
   add('参考及喜欢的地方', value('references'));
 
   lines.push('', '【想保留的细节与公开边界】');
@@ -366,28 +384,102 @@ function summary() {
   choices('avoid').forEach(answer => add('需避开', answer));
   add('只供理解或须先确认的内容', value('boundary'));
   add('想说的话', value('ending'));
-  if (lines.at(-1).startsWith('【')) lines.push('这次未填写。');
   return lines.join('\n');
 }
 
+const validationMessage = document.createElement('p');
+validationMessage.id = 'validationMessage';
+validationMessage.className = 'validation-message';
+validationMessage.setAttribute('role', 'alert');
+let invalidControl;
+
+function clearValidation() {
+  if (!invalidControl) return;
+  invalidControl.removeAttribute('aria-invalid');
+  invalidControl.removeAttribute('aria-describedby');
+  validationMessage.remove();
+  invalidControl = undefined;
+}
+
+function validatePanel(index) {
+  const panel = panels[index];
+  for (const field of panel.querySelectorAll('[required], fieldset[data-required-choice]')) {
+    const hidden = field.closest('[hidden]');
+    if (field.disabled || (hidden && hidden !== panel)) continue;
+    let control = field;
+    let message = '';
+    if (field.matches('fieldset')) {
+      if (field.querySelector('input:checked')) continue;
+      control = field.querySelector('input');
+      message = '请选择至少一项。';
+    } else if (field.type === 'radio') {
+      continue;
+    } else if (field.type === 'number' && !field.validity.valid) {
+      message = '请输入 2 到 12 之间的整数。';
+    } else if (!field.value.trim()) {
+      message = field.tagName === 'SELECT' ? '请选一项。' : '请填写这一项。';
+    }
+    if (!message) continue;
+
+    show(index, false);
+    for (let details = control.closest('details'); details; details = details.parentElement.closest('details')) {
+      details.open = true;
+    }
+    if (field.matches('fieldset')) field.querySelector('legend').after(validationMessage);
+    else control.after(validationMessage);
+    validationMessage.textContent = message;
+    invalidControl = control;
+    control.setAttribute('aria-invalid', 'true');
+    control.setAttribute('aria-describedby', validationMessage.id);
+    control.focus();
+    return false;
+  }
+  return true;
+}
+
+function advanceTo(step) {
+  for (let i = 0; i < step; i++) {
+    if (!validatePanel(i)) return;
+  }
+  show(step);
+}
+
+form.addEventListener('input', clearValidation);
 form.addEventListener('change', event => {
-  if (event.target.name === 'count') {
+  clearValidation();
+  const target = event.target;
+  if (target.type === 'checkbox' && target.checked) {
+    const group = target.closest('[data-required-choice]');
+    if (group) {
+      for (const input of group.querySelectorAll('input[type="checkbox"]:checked')) {
+        if (input === target || (!target.hasAttribute('data-exclusive') && !input.hasAttribute('data-exclusive'))) continue;
+        input.checked = false;
+        input.dispatchEvent(new Event('change', { bubbles: true }));
+      }
+    }
+  }
+  if (target.name === 'count') {
     const custom = value('count') === 'other';
     otherCount.disabled = !custom;
     document.querySelector('#customCount').hidden = !custom;
     refreshChapters();
   }
+  if (target.name === 'chapterPlan') {
+    refreshChapters();
+    chapterPicker.open = target.value === 'some';
+  }
 });
 otherCount.addEventListener('input', refreshChapters);
 form.addEventListener('submit', event => {
   event.preventDefault();
-  if (page === countStep && !checkCount()) return;
-  if (page < exportStep) show(page + 1);
+  if (page < exportStep) advanceTo(page + 1);
 });
-back.addEventListener('click', () => show(page - 1));
+for (const button of [topBack, back]) {
+  button.addEventListener('click', () => { if (page > 0) show(page - 1); });
+}
 progress.forEach((button, i) => button.addEventListener('click', () => {
-  if (page === countStep && i > countStep && !checkCount()) return;
-  show(i);
+  if (i > page) advanceTo(i);
+  else show(i);
 }));
 
 document.querySelector('#copy').addEventListener('click', async () => {
